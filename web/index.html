@@ -1,0 +1,23 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="aes.js"></script>
+    </head>
+    <body>
+        <div>test</div>
+         
+        <script>
+            var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+            var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+         <!--   alert(decrypted.toString(CryptoJS.enc.Utf8)); -->
+        </script> 
+    </body>
+
+</html>
+
